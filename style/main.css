@@ -14,7 +14,10 @@
 body{
     background-color: var(--black);
     font-family: 'Times New Roman', Times, serif; /* set better font*/
+    color: white;
 }
+
+/* header/menu */
 
 header .container{
     display: flex;
@@ -38,4 +41,24 @@ header nav a{
 
 header nav a:hover{
     color: var(--grayOnHover);
+}
+
+/* main movie */
+
+.main-movie{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url('../resources/main_movie_banner.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-movie .description{
+    margin-bottom: 40px;
+}
+.title{
+    font-size: 40px;
 }
