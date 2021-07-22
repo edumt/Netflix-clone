@@ -13,7 +13,7 @@
 
 body{
     background-color: var(--black);
-    font-family: 'Times New Roman', Times, serif; /* set better font*/
+    font-family: 'Arial', Times, serif; /* set better font*/
     color: white;
 }
 
@@ -99,4 +99,8 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.movies-carousel{
+    margin-top: 5px;
 }
