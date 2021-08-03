@@ -1,2 +1,2 @@
 # Netflix interface clone
-https://edumt.github.io/Netflix-clone/
+Live preview: https://edumt.github.io/Netflix-clone/
