@@ -1,2 +1,2 @@
-# Netflix interface clone
-https://edumt.github.io/Netflix-clone/
+# Netflix interface clone  
+Base project from DIO's build a Netflix (interface) clone course
