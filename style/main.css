@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Netflix Sans"), url("NetflixSans.woff") format("woff");
+}
+
 :root {
   --red: #e50914;
   --black: #141414;
-  --gray: #aaa;
-  --grayOnHover: #fff;
+  --gray: #ddd;
+  --grayOnHover: #999;
 }
 
 * {
@@ -13,7 +20,8 @@
 
 body {
   background-color: var(--black);
-  font-family: "Arial", Times, serif; /* set better font*/
+  font-family: "Netflix Sans", "Arial", Times, serif; /* set better font*/
+
   color: whitesmoke;
 }
 
@@ -21,10 +29,13 @@ body {
 
 header {
   display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header .logo {
-  margin: 20px 10px 10px 30px;
+  margin: 20px 40px 10px 50px;
   color: var(--red);
   font-family: "Arial Black", Times;
   height: 30px;
@@ -38,35 +49,55 @@ header .container {
   flex-grow: 1;
 }
 
-#nav-buttons {
-  display: flex;
-  align-items: center;
-  margin-right: 25px;
-}
-
-#nav-buttons a {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-
-#nav-buttons i {
-  margin-left: 8px;
-}
-
 header nav a {
   text-decoration: none;
   color: var(--gray);
   margin-right: 10px;
 }
 
+@keyframes link-hover {
+  from {
+    color: var(--gray);
+  }
+  to {
+    color: var(--grayOnHover);
+  }
+}
+
 header nav a:hover {
-  color: var(--grayOnHover);
+  animation-name: link-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#home-link {
+  color: #fff;
+  animation-name: none;
+}
+
+#nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+#nav-buttons a {
+  color: #fff;
+  animation-name: none;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#nav-buttons i {
+  margin-left: 8px;
+  font-size: 18px;
 }
 
 #profile-pic {
-  height: 40px;
-  border-radius: 15px;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* main movie */
@@ -75,22 +106,23 @@ header nav a:hover {
   font-size: 16px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../img/main_movie_banner.jpg");
   background-position: center;
-  height: 400px;
+  height: 40vw;
   background-size: cover;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 .main-movie .description {
   margin-top: 10px;
   margin-bottom: 40px;
   text-shadow: 1px 1px black;
+  font-size: 1.4vw;
 }
 .main-movie .title {
   margin-top: 15%;
-  font-size: 40px;
+  font-size: 90px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -114,12 +146,11 @@ header nav a:hover {
 .main-movie .button i {
   margin-right: 8px;
 }
-.container {
-  margin-left: 20px;
-  #margin-right: 10px;
-}
-.main-movie .container {
+
+.main-movie .description-container {
   width: 70%;
+  margin-left: 50px;
+  margin-bottom: 2%;
 }
 
 /* carousel */
