@@ -90,13 +90,19 @@ header nav a:hover {
   overflow: hidden;
 }
 
+#spacing-div {
+  width: 100%;
+  height: 64px;
+}
+
 /* main movie */
 
 .main-movie {
   font-size: 16px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5) 100%), url("../img/main_movie_banner.jpg");
-  background-position: center;
-  height: 40vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25) 100%), url("../img/main_movie_banner.jpg");
+  background-position: bottom;
+  height: 45vw;
+  /* min-height: ; */
   background-size: cover;
 
   display: flex;
@@ -104,25 +110,33 @@ header nav a:hover {
   justify-content: flex-end;
   align-items: flex-start;
 }
+
+.main-movie .description-container {
+  width: 70%;
+  margin-left: 3%;
+  margin-bottom: 10%;
+}
+
 .main-movie .description {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-shadow: 1px 1px black;
   font-size: 1.4vw;
 }
-.main-movie .title {
+
+/*.main-movie .title {
   margin-top: 15%;
   font-size: 90px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
+}*/
 
 .main-movie .button {
   border: none;
   border-radius: 4px;
 
-  padding: 15px 30px;
+  padding: 0.85vw 1.9vw;
   margin-right: 15px;
-  font-size: 24px;
+  font-size: 1.2vw;
   font-weight: 600;
 
   cursor: pointer;
@@ -149,12 +163,6 @@ header nav a:hover {
 
 .main-movie .button i {
   margin-right: 8px;
-}
-
-.main-movie .description-container {
-  width: 70%;
-  margin-left: 50px;
-  margin-bottom: 2%;
 }
 
 /* carousel */
