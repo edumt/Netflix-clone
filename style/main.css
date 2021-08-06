@@ -86,7 +86,7 @@ header nav a:hover {
 
 #profile-pic {
   height: 35px;
-  margin-right: 10px;
+  margin-right: 5px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -110,13 +110,12 @@ header nav a:hover {
   }
 }
 
-.fa-sort-down {
-  margin: 0 !important;
+#profile-arrow {
   animation: reverse-animation;
   animation-duration: 0.3s;
 }
 
-#profile:hover .fa-sort-down {
+#profile:hover #profile-arrow {
   animation-name: animation;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
