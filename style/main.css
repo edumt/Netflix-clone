@@ -85,12 +85,45 @@ header nav a:hover {
 }
 
 #profile-pic {
-  height: 30px;
+  height: 35px;
+  margin-right: 10px;
   border-radius: 5px;
   overflow: hidden;
 }
 
+/* profile arrow animations*/
+@keyframes animation {
+  from {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  to {
+    transform: rotate(180deg) translate(0, -7px);
+  }
+}
+
+@keyframes reverse-animation {
+  from {
+    transform: rotate(180deg) translate(0, -7px);
+  }
+  to {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+.fa-sort-down {
+  margin: 0 !important;
+  animation: reverse-animation;
+  animation-duration: 0.3s;
+}
+
+#profile:hover .fa-sort-down {
+  animation-name: animation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
 #spacing-div {
+  /* .main-movie vertical offset hack */
   width: 100%;
   height: 64px;
 }
@@ -167,16 +200,32 @@ header nav a:hover {
 
 /* carousel */
 
+.movies-carousel {
+  margin-top: -5%;
+}
+
+.carousel-title {
+  display: block;
+  margin-left: 4%;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+
 .movie-box {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.movies-carousel {
-  margin-top: 5px;
-}
-
 .owl-dots {
   display: none;
+}
+
+.owl-stage {
+  padding-left: 3%;
+  background-color: transparent;
 }
