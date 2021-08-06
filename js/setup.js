@@ -2,6 +2,8 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:false,
+    lazyLoad:true,
     stagePadding:30,
     responsive:{
         0:{
@@ -13,7 +15,7 @@ $('.owl-carousel').owlCarousel({
         1000:{
             items:6
         },
-        1500:{
+        1400:{
             items:8
         }
     }
