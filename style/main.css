@@ -197,12 +197,7 @@ header nav a:hover {
   margin-right: 8px;
 }
 
-/* carousel */
-
-.movies-carousel {
-  margin-top: -5%;
-  cursor: pointer;
-}
+/* carousel title */
 
 .carousel-title {
   display: block;
@@ -231,9 +226,19 @@ header nav a:hover {
   display: inline-block !important;
 }
 
+/* carousel */
+
+#container-carousel {
+  margin-top: -5%;
+}
+
+.movies-carousel {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
 .movie-box {
   height: 100%;
-  width: 100%;
   display: block;
 }
 
