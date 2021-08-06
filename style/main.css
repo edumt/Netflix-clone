@@ -248,11 +248,3 @@ header nav a:hover {
 .owl-dots {
   display: none !important;
 }
-
-.owl-stage {
-  padding-left: 3%;
-  background-color: transparent;
-}
-
-.owl-stage-outer {
-}
