@@ -29,6 +29,7 @@
   .main-movie .description {
     font-size: 1.8vw;
     width: 75%;
+    margin-bottom: 10px;
   }
   .main-movie .button {
     font-size: 1.5vw;

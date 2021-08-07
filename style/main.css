@@ -25,6 +25,80 @@ body {
   color: whitesmoke;
 }
 
+/* profile selection toggle hack*/
+
+#profile-selected {
+  display: none;
+}
+
+#profile-unselected {
+  color: var(--grayOnHover);
+}
+
+.profile-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-container h2 {
+  color: white;
+  text-align: center;
+  margin-top: -5%;
+  margin-bottom: 3%;
+  font-size: 3.6vw;
+  font-weight: 200;
+}
+
+.profiles-row {
+  margin-left: -5%;
+  margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+}
+
+.profile {
+  display: block;
+  text-decoration: none;
+  color: var(--grayOnHover);
+}
+.profile h3 {
+  text-align: center;
+}
+
+.profile img {
+  height: 13vw;
+  width: auto;
+  border-radius: 3%;
+}
+
+.profile:hover {
+  color: whitesmoke;
+}
+
+.profile:hover img {
+  border: whitesmoke solid 3px;
+}
+
+.profile-container .manage-profiles {
+  margin-left: -1%;
+  background: none;
+  border: 1px solid var(--grayOnHover);
+  color: var(--grayOnHover);
+  font-size: 1.2vw;
+  font-weight: 100;
+  letter-spacing: 4px;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+.profile-container .manage-profiles:hover {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
 /* header/menu */
 
 header {
@@ -35,10 +109,8 @@ header {
   z-index: 2;
 }
 
-header .logo {
+.logo {
   margin: 20px 40px 10px 50px;
-  color: var(--red);
-  font-family: "Arial Black", Times;
   height: 30px;
 }
 

@@ -15,152 +15,176 @@
     <title>Netflix clone</title>
   </head>
   <body>
-    <header>
-      <a href="#"><img src="img/netflix-logo.png" alt="Netflix logo" class="logo" /></a>
-
-      <div class="container">
-        <nav id="nested-navbar">
-          <a href="#" id="browse-link">Browse <i class="fas fa-sort-down nav-arrow"></i></a>
-        </nav>
-        <nav id="nav-categories">
-          <a href="#" id="home-link">Home</a>
-          <a href="#">TV Shows</a>
-          <a href="#">Movies</a>
-          <a href="#">New & Popular</a>
-          <a href="#">My List</a>
-          <a href="#">Rewatch</a>
-        </nav>
-        <nav id="nav-buttons">
-          <a href="#"><i class="fas fa-search search-icon"></i></a>
-          <a href="#"><i class="fas fa-bell"></i></a>
-          <a href="https://github.com/edumt" target="_blank" id="profile">
-            <img id="profile-pic" src="img/profile-picture.jpeg" alt="" />
-            <i id="profile-arrow" class="fas fa-sort-down nav-arrow"></i>
+    <div id="profile-unselected">
+      <a href="#"><img class="logo" src="img/netflix-logo.png" alt="" /></a>
+      <div class="profile-container">
+        <h2>Who's watching?</h2>
+        <div class="profiles-row">
+          <a href="https://github.com/edumt" class="profile" target="_blank">
+            <img src="img/github-logo.png" alt="" />
+            <h3>GitHub</h3>
           </a>
-        </nav>
+          <a href="#" class="profile">
+            <img src="img/profile-picture.jpeg" alt="" />
+            <h3>edumt</h3>
+            <h3>click me!</h3>
+          </a>
+          <a href="https://www.linkedin.com/in/edumt/" class="profile" target="_blank">
+            <img src="img/logo-linkedin-square.jpg" alt="" />
+            <h3>LinkedIn</h3>
+          </a>
+        </div>
+        <button class="manage-profiles">MANAGE PROFILES</button>
       </div>
-    </header>
+    </div>
+    <div id="profile-selected">
+      <header>
+        <a href="#"><img src="img/netflix-logo.png" alt="Netflix logo" class="logo" /></a>
 
-    <div id="spacing-div"></div>
+        <div class="container">
+          <nav id="nested-navbar">
+            <a href="#" id="browse-link">Browse <i class="fas fa-sort-down nav-arrow"></i></a>
+          </nav>
+          <nav id="nav-categories">
+            <a href="#" id="home-link">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New & Popular</a>
+            <a href="#">My List</a>
+            <a href="#">Rewatch</a>
+          </nav>
+          <nav id="nav-buttons">
+            <a href="#"><i class="fas fa-search search-icon"></i></a>
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="https://github.com/edumt" target="_blank" id="profile">
+              <img id="profile-pic" src="img/profile-picture.jpeg" alt="" />
+              <i id="profile-arrow" class="fas fa-sort-down nav-arrow"></i>
+            </a>
+          </nav>
+        </div>
+      </header>
 
-    <main>
-      <div class="main-movie">
-        <div class="description-container">
-          <!-- <h3 class="title">OZARK</h3> -->
-          <p class="description">
-            A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million
-            in five years to appease a drug boss.
-          </p>
-          <div class="buttons">
-            <button role="button" class="button">
-              <i class="fas fa-play"></i>
-              Play
-            </button>
-            <button role="button" class="button">
-              <i class="fas fa-info-circle"></i>
-              More Info
-            </button>
+      <div id="spacing-div"></div>
+
+      <main>
+        <div class="main-movie">
+          <div class="description-container">
+            <!-- <h3 class="title">OZARK</h3> -->
+            <p class="description">
+              A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500
+              million in five years to appease a drug boss.
+            </p>
+            <div class="buttons">
+              <button role="button" class="button">
+                <i class="fas fa-play"></i>
+                Play
+              </button>
+              <button role="button" class="button">
+                <i class="fas fa-info-circle"></i>
+                More Info
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <div id="container-carousel">
-      <div class="movies-carousel">
-        <a href="#" class="carousel-title">
-          Trending Now
-          <i class="fas fa-angle-right arrow"></i>
-        </a>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img class="movie-box" src="img/mini1.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini3.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini5.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini7.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini9.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini11.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini13.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini15.jpg" alt="" />
+      <div id="container-carousel">
+        <div class="movies-carousel">
+          <a href="#" class="carousel-title">
+            Trending Now
+            <i class="fas fa-angle-right arrow"></i>
+          </a>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="movie-box" src="img/mini1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini3.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini5.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini7.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini9.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini11.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini13.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini15.jpg" alt="" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="movies-carousel">
-        <a href="#" class="carousel-title">
-          Popular on Netflix
-          <i class="fas fa-angle-right arrow"></i>
-        </a>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img class="movie-box" src="img/mini2.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini4.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini6.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini8.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini10.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini12.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini14.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini16.jpg" alt="" />
+        <div class="movies-carousel">
+          <a href="#" class="carousel-title">
+            Popular on Netflix
+            <i class="fas fa-angle-right arrow"></i>
+          </a>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="movie-box" src="img/mini2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini4.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini6.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini8.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini10.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini12.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini14.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini16.jpg" alt="" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="movies-carousel">
-        <a href="#" class="carousel-title">
-          Continue Watching
-          <i class="fas fa-angle-right arrow"></i>
-        </a>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img class="movie-box" src="img/mini16.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini15.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini14.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini13.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini12.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini11.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini10.jpg" alt="" />
-          </div>
-          <div class="item">
-            <img class="movie-box" src="img/mini9.jpg" alt="" />
+        <div class="movies-carousel">
+          <a href="#" class="carousel-title">
+            Continue Watching
+            <i class="fas fa-angle-right arrow"></i>
+          </a>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img class="movie-box" src="img/mini16.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini15.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini14.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini13.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini12.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini11.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini10.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="movie-box" src="img/mini9.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
