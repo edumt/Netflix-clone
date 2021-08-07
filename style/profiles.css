@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Netflix Sans"), url("NetflixSans.woff") format("woff");
+}
+
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --gray: #e0e0e0;
+  --grayOnHover: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Netflix Sans", "Arial", Times, serif; /* set better font*/
+  color: whitesmoke;
+}
+
+.logo {
+  margin: 20px 40px 10px 50px;
+  height: 30px;
+}
+
+#profile-unselected {
+  color: var(--grayOnHover);
+  font-size: 1.2vw;
+}
+
+.profile-container {
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-container h2 {
+  color: white;
+  text-align: center;
+  margin-top: -5%;
+  margin-bottom: 3%;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.profiles-row {
+  margin-left: -5%;
+  margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+}
+
+.profile {
+  display: block;
+  text-decoration: none;
+  color: var(--grayOnHover);
+  cursor: pointer;
+}
+.profile h3 {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+.profile h3#click-me {
+  font-size: 0.67em;
+}
+
+.profile img {
+  display: block;
+  margin: 0 auto;
+  height: 13vw;
+  min-height: 84px;
+  width: auto;
+  border-radius: 3%;
+}
+
+.profile:hover {
+  color: whitesmoke;
+}
+
+.profile:hover img {
+  border: whitesmoke solid 3px;
+}
+
+.profile-container .manage-profiles {
+  margin-left: -1%;
+  background: none;
+  border: 1px solid var(--grayOnHover);
+  color: var(--grayOnHover);
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 4px;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+.profile-container .manage-profiles:hover {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}

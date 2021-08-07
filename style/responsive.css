@@ -3,9 +3,21 @@
     height: 25px;
   }
 
+  #profile-unselected div {
+    font-size: 12px;
+  }
+
+  #profile-unselected .profile-container .manage-profiles {
+    letter-spacing: 2px;
+  }
+
   #nested-navbar a {
     display: flex;
     font-size: 10px;
+  }
+
+  #spacing-div {
+    height: 44px !important;
   }
 }
 
@@ -16,6 +28,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  #profile-unselected {
+    font-size: 12px !important;
+  }
   header .logo {
     margin: 10px 20px 5px 25px;
   }
@@ -45,6 +60,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  #profile-unselected {
+    font-size: 1.5vw;
+  }
   #nested-navbar {
     display: flex;
   }
